@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF9C4"
+    android:gravity="center_horizontal">
+
+    <!-- Nhập Ngày mượn -->
+    <EditText
+        android:id="@+id/etNgayMuon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày mượn"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:backgroundTint="#D3D3D3"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Nhập Mã người dùng -->
+    <EditText
+        android:id="@+id/etMaNguoiDung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã người dùng"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:backgroundTint="#D3D3D3"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Switch cho trạng thái -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp">
+
+        <!-- Nhãn trạng thái -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <!-- Switch cho trạng thái -->
+        <Switch
+            android:id="@+id/switchTrangThai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bật/Tắt"
+            android:textSize="16sp"
+            android:thumbTint="@android:color/holo_blue_light"
+            android:trackTint="@android:color/holo_green_light"/>
+    </LinearLayout>
+
+</LinearLayout>
